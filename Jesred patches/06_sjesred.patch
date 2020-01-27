@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      /VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch – DEV
+    </title>
+        <link rel="search" href="/DEV/search" />
+        <link rel="help" href="/DEV/wiki/TracGuide" />
+        <link rel="alternate" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch?format=txt" type="text/plain" title="Plain Text" /><link rel="alternate" href="/DEV/export/160663/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch" type="text/x-diff; charset=iso-8859-15" title="Original Format" />
+        <link rel="up" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches" title="Parent directory" />
+        <link rel="start" href="/DEV/wiki" />
+        <link rel="stylesheet" href="/DEV/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/DEV/search/opensearch" title="Search DEV" />
+    <script type="text/javascript" src="/DEV/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/trac.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/search.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/DEV/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="/"><img src="/DEV/chrome/common/logo.png" alt="SWG" /></a>
+      </div>
+      <form id="search" action="/DEV/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/login">Login</a></li><li><a href="/DEV/prefs">Preferences</a></li><li><a href="/DEV/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/DEV/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/wiki">Wiki</a></li><li><a href="/DEV/timeline">Timeline</a></li><li class="active"><a href="/DEV/browser">Browse Source</a></li><li><a href="/DEV/search">Search</a></li><li class="last"><a href="http://ci.nty.m86.local/" target="hudson">Builds</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/DEV/changeset/105923/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch">Last Change</a></li><li><a href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch?annotate=blame&amp;rev=105923" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li><a href="/DEV/log/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch">Revision Log</a></li><li class="last"><a href="/DEV/revtree">Revtree</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+      <h1>
+    <a class="pathentry first" title="Go to root directory" href="/DEV/browser">root</a><span class="pathentry sep">/</span><a class="pathentry" title="View VSW" href="/DEV/browser/VSW">VSW</a><span class="pathentry sep">/</span><a class="pathentry" title="View trunk" href="/DEV/browser/VSW/trunk">trunk</a><span class="pathentry sep">/</span><a class="pathentry" title="View src" href="/DEV/browser/VSW/trunk/src">src</a><span class="pathentry sep">/</span><a class="pathentry" title="View dist" href="/DEV/browser/VSW/trunk/src/dist">dist</a><span class="pathentry sep">/</span><a class="pathentry" title="View debian" href="/DEV/browser/VSW/trunk/src/dist/debian">debian</a><span class="pathentry sep">/</span><a class="pathentry" title="View jesred" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred">jesred</a><span class="pathentry sep">/</span><a class="pathentry" title="View jesred-1.2pl1" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1">jesred-1.2pl1</a><span class="pathentry sep">/</span><a class="pathentry" title="View debian" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian">debian</a><span class="pathentry sep">/</span><a class="pathentry" title="View patches" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches">patches</a><span class="pathentry sep">/</span><a class="pathentry" title="View 06_sjesred.patch" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch">06_sjesred.patch</a>
+    <br style="clear: both" />
+  </h1>
+      <div id="jumprev">
+        <form action="" method="get">
+          <div>
+            <label for="rev">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" size="6" />
+          </div>
+        </form>
+      </div>
+      <table id="info" summary="Revision info">
+        <tr>
+          <th scope="col">
+            Revision <a href="/DEV/changeset/105923">105923</a>, <span title="1571 bytes">1.5 KB</span>
+            (checked in by ychislov, <a class="timeline" href="/DEV/timeline?from=2014-06-03T09%3A50%3A11%2B0300&amp;precision=second" title="2014-06-03T09:50:11+0300 in Timeline">6 years</a> ago)
+          </th>
+        </tr>
+        <tr>
+          <td class="message searchable">
+              <p>
+jesred: set conf location according to executable name<br />
+</p>
+          </td>
+        </tr>
+      </table>
+      <div id="preview" class="searchable">
+    <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>config.c</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/config.c">
+                      a
+                  </th>
+                  <th title="File b/config.c">
+                      b
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>76</th><td class="l"><span>}</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>78</th><th>78</th><td class="l"><span>void</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>79</th><th> </th><td class="l"><span>read_config(char *<del></del>*allow, char **rules, char **redirect, char **rewrite) </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>79</th><td class="r"><span>read_config(char *<ins>pname, char *</ins>*allow, char **rules, char **redirect, char **rewrite) </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>80</th><td class="l"><span>{</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>81</th><td class="l"><span>&nbsp; &nbsp; FILE *fd;</span> </td>
+                  </tr><tr>
+                          <th>82</th><th>82</th><td class="l"><span>&nbsp; &nbsp; char *token, *token2;</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="#L85">…</a></th>
+                  <th><a href="#L85">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>85</th><th>85</th><td class="l"><span>&nbsp; &nbsp; echo_mode = 0;</span> </td>
+                  </tr><tr>
+                          <th>86</th><th>86</th><td class="l"><span>&nbsp; &nbsp; allow_siblings = 0;</span> </td>
+                  </tr><tr>
+                          <th>87</th><th>87</th><td class="l"><span>&nbsp; &nbsp; strcpy(buff,DEFAULT_PATH);</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; &nbsp; strcat(buff,"/");</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; if (strcmp(pname, "sjesred") == 0) {</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strcat(buff, "/sjesred/");</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; } else { </span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strcat(buff, "/jesred/");</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; }</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>93</th><td class="l"><span>&nbsp; &nbsp; strcat(buff,"jesred.conf");</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>94</th><td class="l"><span>&nbsp; &nbsp; if ( (fd=fopen(buff,"r")) == NULL) {</span> </td>
+                  </tr><tr>
+                          <th>91</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; token = strerror(errno);</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>config.h</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/config.h">
+                      a
+                  </th>
+                  <th title="File b/config.h">
+                      b
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>27</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>28</th><th>28</th><td class="l"><span>void read_allow(char **, ip_acl **);</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>void read_rules(char **,pattern_item **);</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>void read_config(char *<del></del>*, char **, char **, char **);</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>void read_config(char *<ins>, char *</ins>*, char **, char **, char **);</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>#endif</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>main.c</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/main.c">
+                      a
+                  </th>
+                  <th title="File b/main.c">
+                      b
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span>#include&lt;stdio.h&gt;</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>#include&lt;stdlib.h&gt;</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span>#include&lt;string.h&gt;</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>27</th><td class="r"><ins>#include&lt;libgen.h&gt;</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>28</th><td class="l"><span>#include&lt;sys/signal.h&gt;</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>29</th><td class="l"><span>#include&lt;sys/types.h&gt;</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>30</th><td class="l"><span>#include&lt;netinet/in.h&gt;</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="#L71">…</a></th>
+                  <th><a href="#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>72</th><td class="l"><span>&nbsp; &nbsp; char *f_rewrite = NULL;</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>73</th><td class="l"><span>&nbsp; &nbsp; char *f_redirect = NULL;</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; &nbsp; char *pname = basename(argv[0]);</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>76</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>77</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>75</th><th>78</th><td class="l"><span>/*&nbsp; &nbsp; int first_run = 1; */</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>79</th><td class="l"><span>&nbsp; &nbsp; char buff[BUFSIZE];</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="#L100">…</a></th>
+                  <th><a href="#L103">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>103</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ip_acl_destroy(&amp;ip_list);</span> </td>
+                  </tr><tr>
+                          <th>101</th><th>104</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; plist_destroy(&amp;pattern_list);</span> </td>
+                  </tr><tr>
+                          <th>102</th><th>105</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; closeLogs();</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; read_config(<del></del>&amp;f_allow, &amp;f_rules, &amp;f_redirect, &amp;f_rewrite);</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; read_config(<ins>pname, </ins>&amp;f_allow, &amp;f_rules, &amp;f_redirect, &amp;f_rewrite);</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>107</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if (! interactive)</span> </td>
+                  </tr><tr>
+                          <th>105</th><th>108</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; openLogs(&amp;f_redirect, &amp;f_rewrite);</span> </td>
+                  </tr><tr>
+                          <th>106</th><th>109</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; read_allow(&amp;f_allow, &amp;ip_list);</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+      <div id="help">
+        <strong>Note:</strong> See <a href="/DEV/wiki/TracBrowser">TracBrowser</a>
+        for help on using the browser.
+      </div>
+      <div id="anydiff">
+        <form action="/DEV/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch" />
+            <input type="hidden" name="old_path" value="/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch" />
+            <input type="hidden" name="new_rev" value="105923" />
+            <input type="hidden" name="old_rev" value="105923" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch?format=txt">Plain Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="/DEV/export/160663/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/06_sjesred.patch">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/DEV/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/DEV/about"><strong>Trac 0.11.4</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">
+<span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://bugs.finjan.com/bugs/">Bugzilla</a>&nbsp;&nbsp;
+<span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://apt2.finjan.com">Machine Installer</a>&nbsp;&nbsp;
+<span style="color:#0f3559;font-size:140%">&#9632;</span>&nbsp;<a href="http://nty-intranet/dev/swg/default.aspx">Dev SharePoint</a>&nbsp;&nbsp;
+<span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://192.168.120.21:3000/warroom/">NG Warroom</a>&nbsp;&nbsp;</p>
+    </div>
+  </body>
+</html>

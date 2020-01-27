@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      /VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff – DEV
+    </title>
+        <link rel="search" href="/DEV/search" />
+        <link rel="help" href="/DEV/wiki/TracGuide" />
+        <link rel="alternate" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff?format=txt" type="text/plain" title="Plain Text" /><link rel="alternate" href="/DEV/export/160663/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff" type="text/x-diff; charset=iso-8859-15" title="Original Format" />
+        <link rel="up" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches" title="Parent directory" />
+        <link rel="start" href="/DEV/wiki" />
+        <link rel="stylesheet" href="/DEV/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/DEV/search/opensearch" title="Search DEV" />
+    <script type="text/javascript" src="/DEV/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/trac.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/search.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/DEV/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="/"><img src="/DEV/chrome/common/logo.png" alt="SWG" /></a>
+      </div>
+      <form id="search" action="/DEV/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/login">Login</a></li><li><a href="/DEV/prefs">Preferences</a></li><li><a href="/DEV/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/DEV/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/wiki">Wiki</a></li><li><a href="/DEV/timeline">Timeline</a></li><li class="active"><a href="/DEV/browser">Browse Source</a></li><li><a href="/DEV/search">Search</a></li><li class="last"><a href="http://ci.nty.m86.local/" target="hudson">Builds</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/DEV/changeset/105788/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff">Last Change</a></li><li><a href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff?annotate=blame&amp;rev=105788" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li><a href="/DEV/log/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff">Revision Log</a></li><li class="last"><a href="/DEV/revtree">Revtree</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+      <h1>
+    <a class="pathentry first" title="Go to root directory" href="/DEV/browser">root</a><span class="pathentry sep">/</span><a class="pathentry" title="View VSW" href="/DEV/browser/VSW">VSW</a><span class="pathentry sep">/</span><a class="pathentry" title="View trunk" href="/DEV/browser/VSW/trunk">trunk</a><span class="pathentry sep">/</span><a class="pathentry" title="View src" href="/DEV/browser/VSW/trunk/src">src</a><span class="pathentry sep">/</span><a class="pathentry" title="View dist" href="/DEV/browser/VSW/trunk/src/dist">dist</a><span class="pathentry sep">/</span><a class="pathentry" title="View debian" href="/DEV/browser/VSW/trunk/src/dist/debian">debian</a><span class="pathentry sep">/</span><a class="pathentry" title="View jesred" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred">jesred</a><span class="pathentry sep">/</span><a class="pathentry" title="View jesred-1.2pl1" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1">jesred-1.2pl1</a><span class="pathentry sep">/</span><a class="pathentry" title="View debian" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian">debian</a><span class="pathentry sep">/</span><a class="pathentry" title="View patches" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches">patches</a><span class="pathentry sep">/</span><a class="pathentry" title="View 05_squid3.diff" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff">05_squid3.diff</a>
+    <br style="clear: both" />
+  </h1>
+      <div id="jumprev">
+        <form action="" method="get">
+          <div>
+            <label for="rev">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" size="6" />
+          </div>
+        </form>
+      </div>
+      <table id="info" summary="Revision info">
+        <tr>
+          <th scope="col">
+            Revision <a href="/DEV/changeset/105788">105788</a>, <span title="2660 bytes">2.6 KB</span>
+            (checked in by ychislov, <a class="timeline" href="/DEV/timeline?from=2014-05-29T14%3A10%3A32%2B0300&amp;precision=second" title="2014-05-29T14:10:32+0300 in Timeline">6 years</a> ago)
+          </th>
+        </tr>
+        <tr>
+          <td class="message searchable">
+              <p>
+jesred: fix bug <a rel='nofollow' class='ticket' href='http://bugs.finjan.com/bugs//show_bug.cgi?id=43548'>#43548</a> in trunk<br />
+</p>
+          </td>
+        </tr>
+      </table>
+      <div id="preview" class="searchable">
+    <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>jesred-1.2pl1</a>
+        </h2>
+        <pre>#! /bin/sh /usr/share/dpatch/dpatch-run
+## 05_squid3.dpatch by  &lt;az@debian.org&gt;
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@</pre>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File jesred-1.2pl1.orig/rewrite.c">
+                      old
+                  </th>
+                  <th title="File jesred-1.2pl1/rewrite.c">
+                      new
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>94</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[2] = token;</span> </td>
+                  </tr><tr>
+                          <th>95</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *ident = new_token;</span> </td>
+                  </tr><tr>
+                          <th>96</th><th>96</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>97</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* az Tue Nov 11 09:12:04 2008</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;message format changed between 2.5 and 2.6, and again</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;between 2 and 3...*sigh*</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;squid 2.6: URL &lt;SP&gt; client_ip "/" fqdn &lt;SP&gt; user &lt;SP&gt; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>102</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; method &lt;SP&gt; urlgroup [&lt;SP&gt; kvpairs] &lt;NL&gt;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;squid 3: same but without the urlgroup column.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>104</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>105</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no space after method: no urlgroup</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;space but no = after method: 2.6, urlgroup</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;space but = after method: 3, no urlgroup.</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>108</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; */</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>109</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* this might be the last token, check for a space</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>110</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;or a newline */</span> </td>
+                  </tr><tr>
+                          <th>99</th><th>111</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (!( new_token = strchr(++token,' ')))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="#L104">…</a></th>
+                  <th><a href="#L116">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>116</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[3] = new_token;</span> </td>
+                  </tr><tr>
+                          <th>105</th><th>117</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *method = token;</span> </td>
+                  </tr><tr>
+                          <th>106</th><th>118</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* this will be the last token, stop at a space or newline</span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;to avoid spaces in urlgroup.&nbsp; maybe be too rare to </span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;waste a test on */</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>119</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* here goes urlgroup or optional k=v pairs */</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>120</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (!( token = strchr(++new_token,' ')))</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>111</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; token = strchr(new_token,'\n');</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (token) {&nbsp; &nbsp; &nbsp; /* urlgroup */</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c++;</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *token = '\0';</span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end[4] = token;</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* squid sends "-" as indicator for no urlgroup&nbsp; */</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (strcmp(new_token,"-"))</span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*urlgroup = new_token;</span> </td>
+                      </tr><tr>
+                        <th>119</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;token = strchr(new_token,'\n');</span> </td>
+                      </tr><tr>
+                        <th> </th><th>122</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (token)&nbsp; &nbsp; &nbsp; &nbsp;/* urlgroup or k/v pairs*/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c++;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*token = '\0';</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end[4] = token;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/* squid 2.6+ sends "-" as indicator for no urlgroup,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>128</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; squid 3 has no urlgroups.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; note: this can't ever work with an urlgroup that has </span> </td>
+                      </tr><tr>
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; equal signs in it... </span> </td>
+                      </tr><tr>
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; */</span> </td>
+                      </tr><tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (strcmp(new_token,"-") &amp;&amp; !strchr(new_token,'='))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*urlgroup = new_token;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>134</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>135</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>136</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span> </td>
+                  </tr><tr>
+                          <th>121</th><th>137</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>122</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>123</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>124</th><th>138</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; }</span> </td>
+                  </tr><tr>
+                          <th>125</th><th>139</th><td class="l"><span>&nbsp; &nbsp; }</span> </td>
+                  </tr><tr>
+                          <th>126</th><th>140</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>jesred-1.2pl1</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File jesred-1.2pl1.orig/main.c">
+                      old
+                  </th>
+                  <th title="File jesred-1.2pl1/main.c">
+                      new
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fflush(stdout);</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>149</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span> </td>
+                  </tr><tr>
+                          <th>150</th><th>150</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else {</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; printf("%s %s %s %s\n",</span> </td>
+                      </tr><tr>
+                        <th>152</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;redirect_url, src_addr, ident, method</del>);</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /* change output to fit squid 3.4 */</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; printf("%s\n", redirect_url</ins>);</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>153</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fflush(stdout);</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>154</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mylog(MATCH, "%s %s %s %d\n", src_addr, url, redirect_url,</span> </td>
+                  </tr><tr>
+                          <th>155</th><th>155</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; val);</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+      <div id="help">
+        <strong>Note:</strong> See <a href="/DEV/wiki/TracBrowser">TracBrowser</a>
+        for help on using the browser.
+      </div>
+      <div id="anydiff">
+        <form action="/DEV/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff" />
+            <input type="hidden" name="old_path" value="/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff" />
+            <input type="hidden" name="new_rev" value="105788" />
+            <input type="hidden" name="old_rev" value="105788" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="/DEV/browser/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff?format=txt">Plain Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="/DEV/export/160663/VSW/trunk/src/dist/debian/jesred/jesred-1.2pl1/debian/patches/05_squid3.diff">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/DEV/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/DEV/about"><strong>Trac 0.11.4</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">
+<span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://bugs.finjan.com/bugs/">Bugzilla</a>&nbsp;&nbsp;
+<span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://apt2.finjan.com">Machine Installer</a>&nbsp;&nbsp;
+<span style="color:#0f3559;font-size:140%">&#9632;</span>&nbsp;<a href="http://nty-intranet/dev/swg/default.aspx">Dev SharePoint</a>&nbsp;&nbsp;
+<span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://192.168.120.21:3000/warroom/">NG Warroom</a>&nbsp;&nbsp;</p>
+    </div>
+  </body>
+</html>
