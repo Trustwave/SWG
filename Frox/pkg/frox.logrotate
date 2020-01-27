@@ -1,0 +1,12 @@
+#
+#	Logrotate fragment for frox.
+#
+/var/wasp/log/frox.log {
+	weekly	
+	size 10M
+    rotate 7 
+	compress
+	delaycompress
+	notifempty 
+	missingok
+}
