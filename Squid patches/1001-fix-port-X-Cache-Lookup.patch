@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      /VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch – DEV
+    </title>
+        <link rel="search" href="/DEV/search" />
+        <link rel="help" href="/DEV/wiki/TracGuide" />
+        <link rel="alternate" href="/DEV/browser/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch?format=txt" type="text/plain" title="Plain Text" /><link rel="alternate" href="/DEV/export/160663/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch" type="text/x-diff; charset=iso-8859-15" title="Original Format" />
+        <link rel="up" href="/DEV/browser/VSW/trunk/src/dist/debian/squid/tos" title="Parent directory" />
+        <link rel="start" href="/DEV/wiki" />
+        <link rel="stylesheet" href="/DEV/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="/DEV/chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/DEV/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/DEV/search/opensearch" title="Search DEV" />
+    <script type="text/javascript" src="/DEV/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/trac.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/search.js"></script><script type="text/javascript" src="/DEV/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/DEV/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="/"><img src="/DEV/chrome/common/logo.png" alt="SWG" /></a>
+      </div>
+      <form id="search" action="/DEV/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/login">Login</a></li><li><a href="/DEV/prefs">Preferences</a></li><li><a href="/DEV/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/DEV/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/DEV/wiki">Wiki</a></li><li><a href="/DEV/timeline">Timeline</a></li><li class="active"><a href="/DEV/browser">Browse Source</a></li><li><a href="/DEV/search">Search</a></li><li class="last"><a href="http://ci.nty.m86.local/" target="hudson">Builds</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/DEV/changeset/125583/VSW/branches/11.8.0/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch">Last Change</a></li><li><a href="/DEV/browser/VSW/branches/11.8.0/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch?annotate=blame&amp;rev=125583" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li><a href="/DEV/log/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch">Revision Log</a></li><li class="last"><a href="/DEV/revtree">Revtree</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+      <h1>
+    <a class="pathentry first" title="Go to root directory" href="/DEV/browser">root</a><span class="pathentry sep">/</span><a class="pathentry" title="View VSW" href="/DEV/browser/VSW">VSW</a><span class="pathentry sep">/</span><a class="pathentry" title="View trunk" href="/DEV/browser/VSW/trunk">trunk</a><span class="pathentry sep">/</span><a class="pathentry" title="View src" href="/DEV/browser/VSW/trunk/src">src</a><span class="pathentry sep">/</span><a class="pathentry" title="View dist" href="/DEV/browser/VSW/trunk/src/dist">dist</a><span class="pathentry sep">/</span><a class="pathentry" title="View debian" href="/DEV/browser/VSW/trunk/src/dist/debian">debian</a><span class="pathentry sep">/</span><a class="pathentry" title="View squid" href="/DEV/browser/VSW/trunk/src/dist/debian/squid">squid</a><span class="pathentry sep">/</span><a class="pathentry" title="View tos" href="/DEV/browser/VSW/trunk/src/dist/debian/squid/tos">tos</a><span class="pathentry sep">/</span><a class="pathentry" title="View 1001-fix-port-X-Cache-Lookup.patch" href="/DEV/browser/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch">1001-fix-port-X-Cache-Lookup.patch</a>
+    <br style="clear: both" />
+  </h1>
+      <div id="jumprev">
+        <form action="" method="get">
+          <div>
+            <label for="rev">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" size="6" />
+          </div>
+        </form>
+      </div>
+      <table id="info" summary="Revision info">
+        <tr>
+          <th scope="col">
+            Revision <a href="/DEV/changeset/125583">125583</a>, <span title="513 bytes">0.5 KB</span>
+            (checked in by ychislov, <a class="timeline" href="/DEV/timeline?from=2016-05-23T09%3A15%3A46%2B0300&amp;precision=second" title="2016-05-23T09:15:46+0300 in Timeline">4 years</a> ago)
+          </th>
+        </tr>
+        <tr>
+          <td class="message searchable">
+              <p>
+squid: update to 3.5.19<br />
+</p>
+          </td>
+        </tr>
+      </table>
+      <div id="preview" class="searchable">
+    <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>src/client_side_reply.cc</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/src/client_side_reply.cc">
+                      a
+                  </th>
+                  <th title="File b/src/client_side_reply.cc">
+                      b
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1464</th><th>1464</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>1465</th><th>1465</th><td class="l"><span>#if USE_CACHE_DIGESTS</span> </td>
+                  </tr><tr>
+                          <th>1466</th><th>1466</th><td class="l"><span>&nbsp; &nbsp; /* Append X-Cache-Lookup: -- temporary hack, to be removed @?@ @?@ */</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1467</th><th> </th><td class="l"><span>&nbsp; &nbsp; httpHeaderPutStrf(hdr, HDR_X_CACHE_LOOKUP, "%s from %s:%<del>d</del>",</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1467</th><td class="r"><span>&nbsp; &nbsp; httpHeaderPutStrf(hdr, HDR_X_CACHE_LOOKUP, "%s from %s:%<ins>s</ins>",</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1468</th><th>1468</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lookup_type ? lookup_type : "NONE",</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1469</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getMyHostname(), <del>getMyPort</del>());</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1469</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getMyHostname(), <ins>request-&gt;myportname.termedBuf</ins>());</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1470</th><th>1470</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>1471</th><th>1471</th><td class="l"><span>#endif</span> </td>
+                  </tr><tr>
+                          <th>1472</th><th>1472</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+      <div id="help">
+        <strong>Note:</strong> See <a href="/DEV/wiki/TracBrowser">TracBrowser</a>
+        for help on using the browser.
+      </div>
+      <div id="anydiff">
+        <form action="/DEV/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch" />
+            <input type="hidden" name="old_path" value="/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch" />
+            <input type="hidden" name="new_rev" value="125583" />
+            <input type="hidden" name="old_rev" value="125583" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="/DEV/browser/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch?format=txt">Plain Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="/DEV/export/160663/VSW/trunk/src/dist/debian/squid/tos/1001-fix-port-X-Cache-Lookup.patch">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/DEV/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/DEV/about"><strong>Trac 0.11.4</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">
+<span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://bugs.finjan.com/bugs/">Bugzilla</a>&nbsp;&nbsp;
+<span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://apt2.finjan.com">Machine Installer</a>&nbsp;&nbsp;
+<span style="color:#0f3559;font-size:140%">&#9632;</span>&nbsp;<a href="http://nty-intranet/dev/swg/default.aspx">Dev SharePoint</a>&nbsp;&nbsp;
+<span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://192.168.120.21:3000/warroom/">NG Warroom</a>&nbsp;&nbsp;</p>
+    </div>
+  </body>
+</html>
